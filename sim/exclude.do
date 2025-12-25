@@ -1,0 +1,7 @@
+coverage exclude -scope /test_bench/dut/inst_reg -togglenode {TIER[1]} {TIER[2]} {TIER[3]} {TIER[4]} {TIER[5]} {TIER[6]} {TIER[7]} {TIER[8]} {TIER[9]} {TIER[10]} -comment {Reserved access, can not be changed} 
+coverage exclude -scope /test_bench/dut/inst_reg -togglenode {TIER[11]} {TIER[12]} {TIER[13]} {TIER[14]} {TIER[15]} {TIER[16]} {TIER[17]} {TIER[18]} {TIER[19]} {TIER[20]} -comment {Reserved access, can not be changed} 
+coverage exclude -scope /test_bench/dut/inst_reg -togglenode {TIER[21]} {TIER[22]} {TIER[23]} {TIER[24]} {TIER[25]} {TIER[26]} {TIER[27]} {TIER[28]} {TIER[29]} {TIER[30]} -comment {Reserved access, can not be changed} 
+coverage exclude -scope /test_bench/dut/inst_reg -togglenode {TIER[31]} {TISR[1]} {TISR[2]} {TISR[3]} {TISR[4]} {TISR[5]} {TISR[6]} {TISR[7]} {TISR[8]} {TISR[9]} {TISR[10]} -comment {Reserved access, can not be changed} 
+coverage exclude -scope /test_bench/dut/inst_reg -togglenode {TISR[11]} {TISR[12]} {TISR[13]} {TISR[14]} {TISR[15]} {TISR[16]} {TISR[17]} {TISR[18]} {TISR[19]} {TISR[20]} -comment {Reserved access, can not be changed} 
+coverage exclude -scope /test_bench/dut/inst_reg -togglenode {TISR[21]} {TISR[22]} {TISR[23]} {TISR[24]} {TISR[25]} {TISR[26]} {TISR[27]} {TISR[28]} {TISR[29]} {TISR[30]} -comment {Reserved access, can not be changed} 
+coverage exclude -scope /test_bench/dut/inst_reg -togglenode {TISR[31]} -comment {Reserved access, can not be changed} 

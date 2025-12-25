@@ -1,0 +1,75 @@
+# vsim -debugDB -l rw_THCSR.log -voptargs="+acc" -assertdebug -c test_bench -do "log -r /*;run -all;" 
+# Start time: 10:03:57 on Sep 20,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# Loading work.top(fast)
+# Loading work.setup(fast)
+# Loading work.regFile(fast)
+# Loading work.counter(fast)
+# Loading work.int_cnt(fast)
+# Loading work.cnt_ctrl(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# log -r /*
+# run -all
+# ==================================================================
+# ==========Pat name: THCSR CHECK=====================================
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct initial value, 32'h0000_0000==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 1st write case, 32'h0000_0000==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 2nd write case, 32'h0000_0001==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 3rd write case, 32'h0000_0001==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 4th write case, 32'h0000_0000==========
+# ==================================================================
+# =====================BYTE ACCESS=====================================
+# ==================================================================
+# ============PASSED: Correct 1st byte access 4'b0000 pstrb, 32'h0000_0000==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 2nd byte access 4'b0001 pstrb, 32'h0000_0000==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 3rd byte access 4'b0010 pstrb, 32'h0000_0000==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 4th byte access 4'b0100 pstrb, 32'h0000_0000==========
+# ==================================================================
+# ==================================================================
+# ===========PASSED: Correct 5th byte access 4'b1000 pstrb, 32'h0000_0000==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 6th byte access 4'b0011 pstrb, 32'h0000_0001==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct 7th byte access 4'b0110 pstrb, 32'h0000_0001==========
+# ==================================================================
+# Test_result PASSED
+# ** Note: $finish    : ../tb/test_bench.v(44)
+#    Time: 5225 ns  Iteration: 1  Instance: /test_bench
+# End time: 10:03:58 on Sep 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

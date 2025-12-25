@@ -1,0 +1,59 @@
+# vsim -coverage -l apb.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit apb.ucdb; log -r /*;run -all" 
+# Start time: 11:46:56 on Sep 20,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit apb.ucdb
+#  log -r /*
+# run -all
+# ==================================================================
+# ==========Pat name: APB SETTING CHECK=====================================
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct trigger APB's pready- write transfer==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct toggle down APB's pready- write transfer==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct trigger APB's pready - read transfer==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct toggle down APB's pready- read transfer==========
+# ==================================================================
+# ~~~~~~~~~~~~~~~ERROR RESPONSE CHECK~~~~~~~~~~~~~~
+# ==================================================================
+# ============PASSED: Correct error response when modifying div_val during timer_en==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct error response when modifying div_en during timer_en==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Correct error response when writing prohibit div_val==========
+# ==================================================================
+# ~~~~~~~~~~~~~~~WRONG APB CHECK~~~~~~~~~~~~~~
+# ==================================================================
+# ============PASSED: Data is not written if setup is not successful==========
+# ==================================================================
+# ==================================================================
+# ============PASSED: Data is not read if setup is not successful, as zero==========
+# ==================================================================
+# Test_result PASSED
+# ** Note: $finish    : ../tb/test_bench.v(44)
+#    Time: 2425 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 11:46:57 on Sep 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
